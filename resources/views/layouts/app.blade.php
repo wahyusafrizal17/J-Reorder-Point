@@ -24,6 +24,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/themes/bordered-layout.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/themes/semi-dark-layout.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/core/menu/menu-types/vertical-menu.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/custom.css') }}">
     </head>
     <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
         <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
@@ -99,7 +100,7 @@
                             <span class="menu-title text-truncate" data-i18n="Modal Examples">Dashboard</span>
                         </a>
                     </li>
-                    <li class=" nav-item">
+                    {{-- <li class=" nav-item">
                         <a class="d-flex align-items-center" href="#">
                             <i data-feather="user"></i>
                             <span class="menu-title text-truncate" data-i18n="User">Master Data</span>
@@ -112,7 +113,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item {!!(Request::is('users*')) ? ' active' : '' !!}">
                         <a class="d-flex align-items-center" href="{{ route('users.index') }}">
                             <i data-feather="users"></i>

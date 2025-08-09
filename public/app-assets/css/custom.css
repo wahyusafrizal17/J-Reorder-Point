@@ -1,0 +1,76 @@
+/* Custom sidebar (left menu) theme: dominant green-yellow */
+
+/* Sidebar container background */
+.main-menu {
+  background: linear-gradient(180deg, #e8f5e9 0%, #fffde7 100%) !important; /* light green to light yellow */
+}
+
+/* Top of sidebar header area (if visible) */
+.main-menu .navbar-header {
+  background: transparent !important;
+}
+
+/* Menu items default */
+.main-menu .navigation > li > a {
+  color: #2e7d32 !important; /* dark green */
+}
+
+/* Menu item title inherits color */
+.main-menu .navigation > li > a .menu-title {
+  color: inherit !important;
+}
+
+/* Icons inherit currentColor so they follow text color */
+.main-menu .navigation > li > a i,
+.main-menu .navigation > li > a svg {
+  color: inherit !important;
+}
+
+/* Hover state */
+.main-menu .navigation > li > a:hover {
+  background-color: #f1f8e9 !important; /* very light green */
+  color: #1b5e20 !important; /* deeper green */
+}
+
+/* Active/open state for top-level */
+.main-menu .navigation > li.active > a,
+.main-menu .navigation > li.open > a {
+  background-color: #e3f2d9 !important; /* light green */
+  color: #1b5e20 !important;
+  border-left: 3px solid #ffd54f !important; /* yellow accent */
+}
+
+/* Ensure the style applies when using the menu-light variant */
+.main-menu.menu-light .navigation > li.active > a {
+  background-color: #e3f2d9 !important;
+  color: #1b5e20 !important;
+  border-left: 3px solid #ffd54f !important;
+}
+.main-menu.menu-light .navigation > li.active > a .menu-title,
+.main-menu.menu-light .navigation > li.active > a i,
+.main-menu.menu-light .navigation > li.active > a svg {
+  color: inherit !important;
+}
+
+/* Submenu container background */
+.main-menu .menu-content {
+  background-color: rgba(255, 253, 231, 0.6) !important; /* light yellow tint */
+}
+
+/* Submenu items */
+.main-menu .menu-content > li > a {
+  color: #2e7d32 !important;
+}
+
+/* Submenu hover */
+.main-menu .menu-content > li > a:hover {
+  background-color: #f9fbe7 !important; /* very light yellow */
+  color: #1b5e20 !important;
+}
+
+/* Submenu active */
+.main-menu .menu-content > li.active > a {
+  color: #1b5e20 !important;
+  background-color: #eef7e3 !important;
+  border-left: 3px solid #ffd54f !important;
+}
